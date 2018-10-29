@@ -1,6 +1,7 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function (options) {
+    console.log("wechat info :", options.query);
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -10,6 +11,7 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        console.log("login code:",res.code);
       }
     })
     // 获取用户信息
@@ -33,6 +35,10 @@ App({
       }
     })
   },
+  onError:function(){
+    console.log("系统错误");
+  },
+
   globalData: {
     userInfo: null
   }

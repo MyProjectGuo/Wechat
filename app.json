@@ -1,13 +1,16 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/news/new_one"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "易查通",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#FF3030"
+   
   },
   "tabBar": {
     "list": [
@@ -16,8 +19,16 @@
         "text": "首页"
       },
       {
+        "pagePath": "pages/news/new_one",
+        "text": "新闻"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "天气"
+      },
+      {
         "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "text": "我的"
       }
     ]
   },
