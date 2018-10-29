@@ -4,32 +4,32 @@ Page({
     routers: [
       {
         name: '新闻',
-        url: '/pages/Course/course',
+        url: '/pages/news/course',
         icon: '/image/news/news.png',
-        code: '10'
+        code: 'BA10TA81wangning'
       },
       {
         name: '娱乐',
         url: '/pages/Course/course',
         icon: '/image/news/yule.png',
-        code: '11'
+        code: 'BD2A86BEwangning'
       },
       {
         name: '体育',
         url: '/pages/Course/course',
         icon: '/image/news/tiyu.png',
-        code: '10'
+        code: 'BA8E6OEOwangning'
       },
       {
         name: '财经',
         icon: '/image/news/caijing.png',
-        code: '11'
+        code: 'BA8EE5GMwangning'
       },
       {
         name: '科技',
         url: '/pages/Course/course',
         icon: '/image/news/keji.png',
-        code: '10'
+        code: 'DE0CGUSJwangning'
       },
       {
         name: '图片',
@@ -51,7 +51,7 @@ Page({
         name: '军事',
         url: '/pages/Course/course',
         icon: '/image/news/junshi.png',
-        code: '10'
+        code: 'BAI67OGGwangning'
       }
     ],
     movies: [
@@ -59,7 +59,16 @@ Page({
       { url: 'http://img04.tooopen.com/images/20130617/tooopen_21241404.jpg' },
       { url: 'http://img04.tooopen.com/images/20130701/tooopen_20083555.jpg' },
       { url: 'http://img02.tooopen.com/images/20141231/sy_78327074576.jpg' }
-    ]  
+    ] ,
+
+    msgList: [
+      { id: 1, title: "标题一", time: "2017-3-5 23:01:59", src: "../../images/wechatHL.png" },
+      { id: 2, title: "标题二", time: "2017-3-5 23:02:59", src: "../../images/wechatHL.png" },
+      { id: 3, title: "标题三", time: "2017-3-5 23:03:59", src: "../../images/wechatHL.png" },
+      { id: 4, title: "标题四", time: "2017-3-5 23:04:59", src: "../../images/wechatHL.png" }
+    ]
+
+
   },
   onLoad: function () {
     console.log('onLoad')

@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/news/new_one"
+    "pages/news/new_one",
+    "pages/news/course"
   ],
   "window":{
     "backgroundTextStyle":"light",

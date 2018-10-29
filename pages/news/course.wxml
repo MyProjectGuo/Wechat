@@ -1,0 +1,11 @@
+<!--pages/list/list.wxml-->
+<text>这是文章列表页面</text>
+<view wx:for="{{msgList}}" wx-for-index="index" wx-for-item="item">
+    <view>
+      <image src="{{src}}" mode="scaleToFill"></image>
+    </view>
+<view>
+    <text>{{item.title}}</text>
+    <text>{{time}}</text>
+</view>
+</view>
